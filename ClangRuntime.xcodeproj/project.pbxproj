@@ -15,6 +15,9 @@
 		FC5DAE361EC974210035CBFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5DAE341EC974210035CBFE /* LaunchScreen.storyboard */; };
 		FC5DAE411EC974210035CBFE /* ClangRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5DAE401EC974210035CBFE /* ClangRuntimeTests.m */; };
 		FC5DAE4C1EC974210035CBFE /* ClangRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5DAE4B1EC974210035CBFE /* ClangRuntimeUITests.m */; };
+		FC7420261ED588F50015FB14 /* Woman.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7420251ED588F50015FB14 /* Woman.m */; };
+		FCCEAF231ED281F000D266C4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCEAF221ED281F000D266C4 /* Person.m */; };
+		FCCEAF261ED2820D00D266C4 /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCEAF251ED2820D00D266C4 /* Man.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		FC5DAE471EC974210035CBFE /* ClangRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClangRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5DAE4B1EC974210035CBFE /* ClangRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClangRuntimeUITests.m; sourceTree = "<group>"; };
 		FC5DAE4D1EC974210035CBFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7420241ED588F50015FB14 /* Woman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Woman.h; sourceTree = "<group>"; };
+		FC7420251ED588F50015FB14 /* Woman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Woman.m; sourceTree = "<group>"; };
+		FCCEAF211ED281F000D266C4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FCCEAF221ED281F000D266C4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FCCEAF241ED2820D00D266C4 /* Man.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		FCCEAF251ED2820D00D266C4 /* Man.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				FC5DAE2A1EC974210035CBFE /* AppDelegate.m */,
 				FC5DAE2C1EC974210035CBFE /* ViewController.h */,
 				FC5DAE2D1EC974210035CBFE /* ViewController.m */,
+				FCCEAF211ED281F000D266C4 /* Person.h */,
+				FCCEAF221ED281F000D266C4 /* Person.m */,
+				FCCEAF241ED2820D00D266C4 /* Man.h */,
+				FCCEAF251ED2820D00D266C4 /* Man.m */,
+				FC7420241ED588F50015FB14 /* Woman.h */,
+				FC7420251ED588F50015FB14 /* Woman.m */,
 				FC5DAE2F1EC974210035CBFE /* Main.storyboard */,
 				FC5DAE321EC974210035CBFE /* Assets.xcassets */,
 				FC5DAE341EC974210035CBFE /* LaunchScreen.storyboard */,
@@ -276,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7420261ED588F50015FB14 /* Woman.m in Sources */,
 				FC5DAE2E1EC974210035CBFE /* ViewController.m in Sources */,
 				FC5DAE2B1EC974210035CBFE /* AppDelegate.m in Sources */,
+				FCCEAF261ED2820D00D266C4 /* Man.m in Sources */,
+				FCCEAF231ED281F000D266C4 /* Person.m in Sources */,
 				FC5DAE281EC974210035CBFE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ClangRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.ClangRuntime;
@@ -440,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ClangRuntime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.ClangRuntime;
@@ -516,6 +536,7 @@
 				FC5DAE521EC974210035CBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC5DAE531EC974210035CBFE /* Build configuration list for PBXNativeTarget "ClangRuntimeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +545,7 @@
 				FC5DAE551EC974210035CBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC5DAE561EC974210035CBFE /* Build configuration list for PBXNativeTarget "ClangRuntimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +554,7 @@
 				FC5DAE581EC974210035CBFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

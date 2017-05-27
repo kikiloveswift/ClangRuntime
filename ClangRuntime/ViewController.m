@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <objc/objc-runtime.h>
+#import "Man.h"
+#define OBJC_OLD_DISPATCH_PROTOTYPES 1
 
 @interface ViewController ()
 
@@ -14,16 +17,20 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self initPerson];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initPerson
+{
+    Man *man = [Man new];
+    objc_msgSend(man, @selector(tellMe));
+    
 }
+
 
 
 @end
